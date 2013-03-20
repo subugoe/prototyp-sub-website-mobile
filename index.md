@@ -3,9 +3,6 @@ layout: index
 title: Prototyp SUB-Website mobile
 language: de
 ---
-
-{% picturefill test|Lorem ipsum dolor sit amut. %}
-
 # H1 Header 1
 
 Der Begriff „Bibliothek“ wird nicht einheitlich verwendet. Er steht für eine öffentliche Einrichtung, für einen Ort, ein Gebäude, für eine geordnete und benutzbare Sammlung von Büchern und anderen publizierten Medien und Informationen, schließlich auch für eine solche Sammlung selbst. Während bis ins 20. Jahrhundert eine Bibliothek vor allem als Büchersammlung definiert wurde, lässt sie sich inzwischen nach Ewert und Walther Umstätter besser als „eine Einrichtung, die unter archivarischen, ökonomischen und synoptischen Gesichtspunkten publizierte Information für die Benutzer sammelt, ordnet und verfügbar macht“ definieren.
