@@ -1,0 +1,31 @@
+@mixin inline-ul {
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline;
+		list-style-type: none;
+	}
+}
+
+@mixin breakpoint($point) {
+	@if $point == desktop {
+		@media ( min-width: 1600px ) { @content; }
+	}
+	@else if $point == notebook {
+		@media ( min-width: 1200px ) and ( max-width: 1599px ) { @content; }
+	}
+	@else if $point == tablet-wide {
+		@media ( min-width: 1024px ) and ( max-width: 1199px ) { @content; }
+	}
+	@else if $point == tablet-tall {
+		@media ( min-width: 768px ) and ( max-width: 1023px )  { @content; }
+	}
+	@else if $point == phone-wide {
+		@media ( min-width: 480px ) and ( max-width: 767px )  { @content; }
+	}
+}
+
+@mixin clean-a($font-color) {
+	text-decoration: none;
+	color: $font-color;
+}

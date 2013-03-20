@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="{{ page.language }}">
+
+<head>
+	<meta charset="UTF-8">
+	<title>{{ page.title }}</title>
+	{% include head-meta.html %}
+</head>
+
+<body id="{{ page.layout }}">
+
+<div id="wrap">
+
+	<div id="content">
+	{{ content }}
+	</div>
+	
+	<div id="footer">
+		<i></i>
+	</div>
+
+</div>
+
+{% include js.html %}
+
+</body>
+
+</html>

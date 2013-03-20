@@ -1,0 +1,134 @@
+/*
+ * IMPORTS
+ */
+@import 'mixins';
+@import "compass/reset";
+@import "compass/css3/transform";
+@import "compass/css3/hyphenation";
+@import "font-awesome";
+
+/*
+ * VARIABLES
+ */
+
+$page-width: 800px;
+$list-style-type: disc;
+$base-font-size: 16px;
+$line-height: 1.35;
+$base-font-color:	#2b2b2b;
+$content-p-text-align: normal;
+
+/*
+ * BASIC
+ */
+
+body {
+	font-size: $base-font-size;
+	color: $base-font-color;
+	background-color: lightgrey;
+	line-height: $line-height;
+	@include breakpoint(tablet-tall) {
+		line-height: $line-height * 1.1;
+	}
+	@include breakpoint(tablet-wide) {
+		line-height: $line-height * 1.15;
+		font-size: $base-font-size * 1.05;
+	}
+	@include breakpoint(notebook) {
+		line-height: $line-height * 1.2;
+		font-size: $base-font-size * 1.15;
+	}
+	@include breakpoint(desktop) {
+		line-height: $line-height * 1.25;
+		font-size: $base-font-size * 1.2;
+	}
+}
+
+img {
+	width: 100%;
+}
+
+sup,
+sub {
+	line-height: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	padding: 0 5px;
+	@include breakpoint(notebook) { padding: 0; }
+	@include breakpoint(desktop) { padding: 0; }
+	a {
+		text-decoration: none;
+	}
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+ul {
+	list-style-type: $list-style-type;
+	margin: 0 0 0 17px;
+}
+
+abbr {
+	&:hover {
+		cursor: help;
+	}
+}
+
+/*
+ * CUSTOM
+ */
+
+#wrap {
+	width: 320px;
+	margin: 0 auto;
+	@include breakpoint(phone-wide) { width: 480px; }
+	@include breakpoint(tablet-tall) { width: 768px; }
+	@include breakpoint(tablet-wide) { width: 1024px; }
+	@include breakpoint(notebook) { width: 1200px; }
+	@include breakpoint(desktop) { width: 1600px; }
+}
+
+#content {
+	p {
+		padding: 0 5px;
+		text-align: $content-p-text-align;
+		@include word-break(break-word);
+		@include hyphens(auto);
+	}
+}
+
+#footer {
+	text-align: right;
+	padding: 0 5px;
+}
+
+/* rotate fontawesome icons right */
+.icon-rotate-right {
+	display: inline-block;
+	@include rotate( 270deg );
+}
