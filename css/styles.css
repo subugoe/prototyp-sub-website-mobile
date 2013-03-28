@@ -1681,7 +1681,7 @@ ul.icons li [class*=" icon-"] {
 body {
   font-size: 16px;
   color: #2b2b2b;
-  background-color: lightgrey;
+  background-color: white;
   line-height: 1.35;
 }
 @media (min-width: 768px) and (max-width: 1023px) {

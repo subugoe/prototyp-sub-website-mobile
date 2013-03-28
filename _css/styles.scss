@@ -25,7 +25,7 @@ $content-p-text-align: normal;
 body {
 	font-size: $base-font-size;
 	color: $base-font-color;
-	background-color: lightgrey;
+	background-color: white;
 	line-height: $line-height;
 	@include breakpoint(tablet-tall) {
 		line-height: $line-height * 1.1;
