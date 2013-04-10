@@ -28,4 +28,4 @@ In manchen Bibliotheken herrscht ein Nebeneinander verschiedener Kataloge: Es gi
 
 ###### H6 Header 6
 
-Sie bedeutet die (zur Print-Ausgabe) zusätzliche Archivierung ganzer Bibliotheksbestände, insbesondere alter Bücher, eventuell auch nur in Auszügen. Der Hintergrund ist der physische Verfall alter Bücher (bzw. ihre anderweitige Vernichtung, Brände, Kriege) und die Möglichkeit, in digitaler Form schnell und kostengünstig Texte zu durchsuchen, zu verbinden, zu versenden oder Listen zu erstellen.
+Sie bedeutet die (zur Print-Ausgabe) zusätzliche Archivierung ganzer Bibliotheksbestände, insbesondere alter Bücher, eventuell auch nur in Auszügen. Der Hintergrund ist der physische Verfall alter Bücher (bzw. ihre anderweitige Vernichtung, Brände, Kriege) und die Möglichkeit, in digitaler Form schnell und kostengünstig Texte zu durchsuchen, zu verbinden, zu versenden oder Listen zu erstellen. 
