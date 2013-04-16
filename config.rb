@@ -6,7 +6,7 @@ css_dir = "css"
 sass_dir = "_css"
 images_dir = "img"
 javascripts_dir = "js"
-sass_options = {:debug_info => true}
+sass_options = {:debug_info => true, :cache => false}
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
