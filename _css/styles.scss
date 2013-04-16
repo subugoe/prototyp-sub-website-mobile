@@ -102,6 +102,18 @@ abbr {
 	}
 }
 
+/* SET SELECTION STYLE */
+::-moz-selection {
+	background: #000000;
+	color: #FFFFFF;
+	text-shadow: none;
+}
+::selection {
+	background: #000000;
+	color: #FFFFFF;
+	text-shadow: none;
+}
+
 /*
  * CUSTOM
  */
