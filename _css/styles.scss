@@ -18,6 +18,8 @@ $base-font-size: 16px;
 $line-height: 1.35;
 $base-font-color:	#2b2b2b;
 $content-p-text-align: normal;
+$transition-time-duration: '0.25s';
+$transition-time-delay: '0s';
 
 /*
  * BASIC
@@ -107,6 +109,9 @@ abbr {
 #wrap {
 	width: 320px;
 	margin: 0 auto;
+	@include transition-property(width);
+	@include transition-duration($transition-time-duration);
+	@include transition-delay($transition-time-delay);
 	@include breakpoint(phone-wide) { width: 480px; }
 	@include breakpoint(tablet-tall) { width: 768px; }
 	@include breakpoint(tablet-wide) { width: 1024px; }
