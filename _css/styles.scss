@@ -6,6 +6,9 @@
 @import "compass/css3/transform";
 @import "compass/css3/hyphenation";
 @import "compass/css3/transition";
+@import "compass/utilities/general/float";
+@import "compass/css3/images";
+@import "compass/css3/border-radius";
 @import "font-awesome";
 
 /*
@@ -16,10 +19,19 @@ $page-width: 800px;
 $list-style-type: disc;
 $base-font-size: 16px;
 $line-height: 1.35;
-$base-font-color:	#2b2b2b;
+$base-font-color:	#434343;
 $content-p-text-align: normal;
 $transition-time-duration: '0.25s';
 $transition-time-delay: '0s';
+$round-corner: 4px;
+$link-color: #1a3771;
+
+$phone-tall-width: 320px;
+$phone-wide-width: 480px;
+$tablet-tall-width: 768px;
+$tablet-wide-width: 1024px;
+$notebook-width: 1200px;
+$desktop-width: 1200px;
 
 /*
  * BASIC
@@ -28,8 +40,9 @@ $transition-time-delay: '0s';
 body {
 	font-size: $base-font-size;
 	color: $base-font-color;
-	background-color: lightgrey;
+	background-color: white;
 	line-height: $line-height;
+	font-family: sans-serif;
 	@include breakpoint(tablet-tall) {
 		line-height: $line-height * 1.1;
 	}
@@ -119,16 +132,18 @@ abbr {
  */
 
 #wrap {
-	width: 320px;
+	width: $phone-tall-width;
 	margin: 0 auto;
+/*
 	@include transition-property(width);
 	@include transition-duration($transition-time-duration);
 	@include transition-delay($transition-time-delay);
-	@include breakpoint(phone-wide) { width: 480px; }
-	@include breakpoint(tablet-tall) { width: 768px; }
-	@include breakpoint(tablet-wide) { width: 1024px; }
-	@include breakpoint(notebook) { width: 1200px; }
-	@include breakpoint(desktop) { width: 1600px; }
+*/
+	@include breakpoint(phone-wide) { width: $phone-wide-width; }
+	@include breakpoint(tablet-tall) { width: $tablet-tall-width; }
+	@include breakpoint(tablet-wide) { width: $tablet-wide-width; }
+	@include breakpoint(notebook) { width: $notebook-width; }
+	@include breakpoint(desktop) { width: $desktop-width; }
 }
 
 #content {
@@ -140,9 +155,255 @@ abbr {
 	}
 }
 
-#footer {
-	text-align: right;
+#search-nav {
 	padding: 0 5px;
+	font-size: 90%;
+	form {
+		padding: 5px 0;
+	}
+	input[type=text] { /* search field/box */
+		@include border-radius($round-corner);
+		border: 1px solid #cbcbcb;
+		padding: 4px;
+		margin: 5px 0;
+		width: 242px;
+		@include breakpoint(phone-wide) {
+			width: 402px;
+		}
+	}
+	input[type=radio] {
+		/* display: none; */
+	}
+	button {
+		padding: 3px;
+		border: 1px solid #cbcbcb;
+		@include border-radius($round-corner);
+	}
+	> ul {
+		margin: 0;
+		> li {
+			list-style-type: none;
+			border-bottom: 1px solid #7e94b7;
+			> a {
+				@include background-image(linear-gradient(top, #5878a9, #496ba0));
+				text-decoration: none;
+				padding: 5px;
+				color: white;
+				display: inline-block;
+			}
+			> a:first-child {
+				color: white;
+				width: $phone-tall-width - 48px;
+				@include breakpoint(phone-wide) {
+					width: $phone-wide-width - 48px;
+				}
+			}
+			> a:nth-child(2) {
+				color: #6c88b7;
+				padding: 5px;
+			}
+		}
+		> li:last-child { /* remove the bottom border from the last menu item */
+			border: none;
+		}
+	}
+	.input {
+		width: 86px;
+		text-align: center;
+		display: block;
+		margin: 5px 5px 0 0;
+		border: 1px solid #cbcbcb;
+		padding: 5px;
+		cursor: pointer;
+		font-size: 80%;
+		min-height: 66px;
+		@include float-left();
+		@include border-radius($round-corner);
+		/* font-size: 80%; */
+		label {
+			cursor: pointer;
+		}
+		a {
+			text-decoration: none;
+			color: $link-color;
+		}
+	}
+	.input:hover {
+		background-color: lightgrey;
+	}
+}
+
+#page-nav { /* the menu to browser the site */
+	padding: 0 5px;
+	font-size: 90%;
+	> ul { /* the main and only main ul */
+		margin: 0;
+		> li {
+			list-style-type: none;
+			border-bottom: 1px solid #768098;
+			> a {
+				@include background-image(linear-gradient(top, #4f5d7f, #3e4d72));
+				text-decoration: none;
+				color: white;
+				padding: 5px;
+				display: inline-block;
+			}
+			> a:first-child { /* the text link */
+				width: $phone-tall-width - 48px;
+				@include breakpoint(phone-wide) {
+					width: $phone-wide-width - 48px;
+				}
+			}
+			> a:nth-child(2) { /* the icon to open/close the menu item */
+				color: #647091;
+			}
+		}
+		> li:last-child { /* remove the bottom border from the last menu item */
+			border: none;
+		}
+		> li.without-subitem { /* menu items without children like "SUB aktuell" and "SUB A-Z" */
+			> a {
+				width: $phone-tall-width - 20px;
+				@include breakpoint(phone-wide) {
+					width: $phone-wide-width - 20px;
+				}
+			}
+		}
+	}
+	ul.second-level { /* second level ul */
+		@include background-image(linear-gradient(top, #516181, #8697b7));
+		margin: 0;
+		font-size: 90%;
+		li {
+			list-style-type: none;
+			border-bottom: 1px solid #8d96aa;
+			a {
+				margin: 0 0 0 10px;
+				padding: 5px;
+				color: white;
+				text-decoration: none;
+				display: inline-block;
+				width: 100%;
+			}
+		}
+	}
+	ul.third-level {
+		li {
+			a {
+				
+			}
+		}
+	}
+}
+
+footer {
+	padding: 0 5px;
+	font-size: 80%;
+	ul {
+		margin: 0;
+		padding: 5px 0;
+	}
+	#footer {
+		display: inline-block;
+		width: 100%;
+		@include background-image(linear-gradient(top, #1a3771, #35508c));
+		a {
+			color: white;
+			text-decoration: none;
+			padding: 5px;
+		}
+		ul:first-child {
+			@include float-left();
+		}
+		ul:last-child {
+			@include float-right();
+			text-align: right;
+		}
+		li {
+			list-style-type: none;
+			@include breakpoint(tablet-tall) {
+				display: inline;
+			}
+			@include breakpoint(tablet-wide) {
+				display: inline;
+			}
+			@include breakpoint(notebook) {
+				display: inline;
+			}
+			@include breakpoint(desktop) {
+				display: inline;
+			}
+		}
+	}
+	#bottom {
+		h2 {
+			padding: 0;
+			cursor: pointer;
+			@include reset-font-size();
+		}
+		a {
+			color: #1a3771;
+			text-decoration: none;
+		}
+		ul {
+			li {
+				list-style-type: none;
+			}
+		}
+		section {
+			width: 100%;
+		}
+		@include breakpoint(phone-wide) {
+			section {
+				padding: 5px;
+				@include float-left();
+				width: 47%;
+			}
+		}
+		@include breakpoint(tablet-tall) {
+			section {
+				padding: 5px;
+				@include float-left();
+				width: 23%;
+			}
+		}
+		@include breakpoint(tablet-wide) {
+			section {
+				padding: 5px;
+				@include float-left();
+				width: 24%;
+			}
+		}
+		@include breakpoint(notebook) {
+			section {
+				padding: 5px;
+				@include float-left();
+				width: 24%;
+			}
+		}
+		@include breakpoint(desktop) {
+			section {
+				padding: 5px;
+				@include float-left();
+				width: 24%;
+			}
+		}
+	}
+}
+
+/*
+#bottom {
+	@include reset-float();
+}
+*/
+
+.clean-link {
+	@include clean-link();
+	display: inline-block;
+}
+
+#bottom {
+	@include reset-float();
 }
 
 /* rotate fontawesome icons right */

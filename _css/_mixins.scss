@@ -29,3 +29,17 @@
 	text-decoration: none;
 	color: $font-color;
 }
+
+@mixin reset-font-size() {
+	font-size: 100%;
+}
+
+@mixin clean-link() {
+	text-decoration: none !important;
+	background: none !important;
+	background-image: none !important;
+	color: #1a3771 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	font-size: 100%;
+}
