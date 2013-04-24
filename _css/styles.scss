@@ -157,9 +157,18 @@ abbr {
 
 #search-nav {
 	padding: 0 5px;
-	font-size: 90%;
 	form {
 		padding: 5px 0;
+	}
+	ul {
+		margin: 0;
+		li {
+			list-style-type: none;
+			a {
+				text-decoration: none;
+				color: $link-color;
+			}
+		}
 	}
 	input[type=text] { /* search field/box */
 		@include border-radius($round-corner);
@@ -171,18 +180,32 @@ abbr {
 			width: 402px;
 		}
 	}
-	input[type=radio] {
-		/* display: none; */
-	}
-	button {
+	button { /* search button */
 		padding: 3px;
 		border: 1px solid #cbcbcb;
 		@include border-radius($round-corner);
 	}
+	.search-nav-discipline {
+		> ul {
+			font-size: 90%;
+			margin: 0 0 10px 0;
+			ul {
+				margin: 0 0 0 30px;
+				li:before {
+					font-family: FontAwesome;
+					content: "\f0da";
+					margin: 0 5px 0 -10px;
+					color: $link-color;
+				}
+				li {
+					padding: 5px 0;
+					/* background-color: lightgrey; */
+				}
+			}
+		}
+	}
 	> ul {
-		margin: 0;
 		> li {
-			list-style-type: none;
 			border-bottom: 1px solid #7e94b7;
 			> a {
 				@include background-image(linear-gradient(top, #5878a9, #496ba0));
@@ -190,6 +213,7 @@ abbr {
 				padding: 5px;
 				color: white;
 				display: inline-block;
+				font-size: 90%;
 			}
 			> a:first-child {
 				color: white;
@@ -206,6 +230,9 @@ abbr {
 		> li:last-child { /* remove the bottom border from the last menu item */
 			border: none;
 		}
+	}
+	span.highlight {
+		background-color: #dee1e7;
 	}
 	.input {
 		width: 86px;
