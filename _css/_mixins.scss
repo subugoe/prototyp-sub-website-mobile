@@ -43,3 +43,10 @@
 	margin: 0 !important;
 	font-size: 100%;
 }
+
+@mixin caret($margin, $color) {
+	font-family: FontAwesome;
+	content: "\f0da";
+	margin: $margin;
+	color: $color;
+}
