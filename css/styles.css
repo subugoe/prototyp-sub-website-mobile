@@ -1861,7 +1861,40 @@ abbr:hover {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003149}}
+.menu {
+  background-color: #93a8cf;
+  display: inline-block;
+  width: 100%;
+  padding: 5px 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003154}}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003158}}
+.menu ul {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003160}}
+.menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  display: inline;
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003165}}
+.menu ul li:first-child {
+  display: inline;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003168}}
+.menu ul li:nth-child(2) {
+  margin: 0 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003175}}
 #content p {
   padding: 0 5px;
   text-align: normal;
@@ -1872,28 +1905,35 @@ abbr:hover {
   hyphens: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003183}}
 #search-nav {
   padding: 0 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003185}}
 #search-nav form {
   padding: 5px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003188}}
 #search-nav ul {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003190}}
 #search-nav ul li {
   list-style-type: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003167}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003192}}
 #search-nav ul li a {
   text-decoration: none;
   color: #1a3771;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003173}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003196}}
+#search-nav ul li li:before {
+  font-family: FontAwesome;
+  content: "\f0da";
+  margin: 0 5px 0 -10px;
+  color: #1a3771;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003201}}
 #search-nav input[type=text] {
   /* search field/box */
   -webkit-border-radius: 4px;
@@ -1905,12 +1945,12 @@ abbr:hover {
   width: 242px;
 }
 @media (min-width: 480px) and (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003173}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003201}}
   #search-nav input[type=text] {
     width: 402px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003211}}
 #search-nav button {
   /* search button */
   padding: 3px;
@@ -1919,32 +1959,33 @@ abbr:hover {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003217}}
 #search-nav .search-nav-discipline > ul {
   font-size: 90%;
-  margin: 0 0 10px 0;
+  margin: 0 0 10px 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003192}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003220}}
 #search-nav .search-nav-discipline > ul ul {
-  margin: 0 0 0 30px;
+  margin: 0 0 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003194}}
-#search-nav .search-nav-discipline > ul ul li:before {
-  font-family: FontAwesome;
-  content: "\f0da";
-  margin: 0 5px 0 -10px;
-  color: #1a3771;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003222}}
 #search-nav .search-nav-discipline > ul ul li {
-  padding: 5px 0;
-  /* background-color: lightgrey; */
+  margin: 5px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003229}}
+#search-nav .search-nav-website ul {
+  font-size: 90%;
+  margin: 0 0 10px 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003232}}
+#search-nav .search-nav-website ul li {
+  margin: 5px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003238}}
 #search-nav > ul > li {
   border-bottom: 1px solid #7e94b7;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003240}}
 #search-nav > ul > li > a {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5878a9), color-stop(100%, #496ba0));
   background-image: -webkit-linear-gradient(top, #5878a9, #496ba0);
@@ -1957,32 +1998,32 @@ abbr:hover {
   display: inline-block;
   font-size: 90%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003248}}
 #search-nav > ul > li > a:first-child {
   color: white;
   width: 272px;
 }
 @media (min-width: 480px) and (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003248}}
   #search-nav > ul > li > a:first-child {
     width: 432px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003225}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003255}}
 #search-nav > ul > li > a:nth-child(2) {
   color: #6c88b7;
   padding: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003230}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003260}}
 #search-nav > ul > li:last-child {
   /* remove the bottom border from the last menu item */
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003234}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003264}}
 #search-nav span.highlight {
   background-color: #dee1e7;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003237}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003267}}
 #search-nav .input {
   width: 86px;
   text-align: center;
@@ -2000,37 +2041,37 @@ abbr:hover {
   border-radius: 4px;
   /* font-size: 80%; */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003250}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003280}}
 #search-nav .input label {
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003253}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003283}}
 #search-nav .input a {
   text-decoration: none;
   color: #1a3771;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003288}}
 #search-nav .input:hover {
   background-color: lightgrey;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003293}}
 #page-nav {
   /* the menu to browser the site */
   padding: 0 5px;
   font-size: 90%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003296}}
 #page-nav > ul {
   /* the main and only main ul */
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003268}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003298}}
 #page-nav > ul > li {
   list-style-type: none;
   border-bottom: 1px solid #768098;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003271}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003301}}
 #page-nav > ul > li > a {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4f5d7f), color-stop(100%, #3e4d72));
   background-image: -webkit-linear-gradient(top, #4f5d7f, #3e4d72);
@@ -2042,42 +2083,42 @@ abbr:hover {
   padding: 5px;
   display: inline-block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003278}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003308}}
 #page-nav > ul > li > a:first-child {
   /* the text link */
   width: 272px;
 }
 @media (min-width: 480px) and (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003278}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003308}}
   #page-nav > ul > li > a:first-child {
     width: 432px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003284}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003314}}
 #page-nav > ul > li > a:nth-child(2) {
   /* the icon to open/close the menu item */
   color: #647091;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003288}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003318}}
 #page-nav > ul > li:last-child {
   /* remove the bottom border from the last menu item */
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003291}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003321}}
 #page-nav > ul > li.without-subitem {
   /* menu items without children like "SUB aktuell" and "SUB A-Z" */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003322}}
 #page-nav > ul > li.without-subitem > a {
   width: 300px;
 }
 @media (min-width: 480px) and (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003322}}
   #page-nav > ul > li.without-subitem > a {
     width: 460px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003300}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003330}}
 #page-nav ul.second-level {
   /* second level ul */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #516181), color-stop(100%, #8697b7));
@@ -2088,12 +2129,12 @@ abbr:hover {
   margin: 0;
   font-size: 90%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003304}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003334}}
 #page-nav ul.second-level li {
   list-style-type: none;
   border-bottom: 1px solid #8d96aa;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003337}}
 #page-nav ul.second-level li a {
   margin: 0 0 0 10px;
   padding: 5px;
@@ -2103,17 +2144,17 @@ abbr:hover {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003356}}
 footer {
   padding: 0 5px;
   font-size: 80%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003359}}
 footer ul {
   margin: 0;
   padding: 5px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003363}}
 footer #footer {
   display: inline-block;
   width: 100%;
@@ -2123,72 +2164,72 @@ footer #footer {
   background-image: -o-linear-gradient(top, #1a3771, #35508c);
   background-image: linear-gradient(top, #1a3771, #35508c);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003367}}
 footer #footer a {
   color: white;
   text-decoration: none;
   padding: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003372}}
 footer #footer ul:first-child {
   display: inline;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003375}}
 footer #footer ul:last-child {
   display: inline;
   float: right;
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003379}}
 footer #footer li {
   list-style-type: none;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003379}}
   footer #footer li {
     display: inline;
   }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003379}}
   footer #footer li {
     display: inline;
   }
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003379}}
   footer #footer li {
     display: inline;
   }
 }
 @media (min-width: 1600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003379}}
   footer #footer li {
     display: inline;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003396}}
 footer #bottom h2 {
   padding: 0;
   cursor: pointer;
   font-size: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003401}}
 footer #bottom a {
   color: #1a3771;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003406}}
 footer #bottom ul li {
   list-style-type: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003410}}
 footer #bottom section {
   width: 100%;
 }
 @media (min-width: 480px) and (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003414}}
   footer #bottom section {
     padding: 5px;
     display: inline;
@@ -2197,7 +2238,7 @@ footer #bottom section {
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003421}}
   footer #bottom section {
     padding: 5px;
     display: inline;
@@ -2206,7 +2247,7 @@ footer #bottom section {
   }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003428}}
   footer #bottom section {
     padding: 5px;
     display: inline;
@@ -2215,7 +2256,7 @@ footer #bottom section {
   }
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003405}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003435}}
   footer #bottom section {
     padding: 5px;
     display: inline;
@@ -2224,7 +2265,7 @@ footer #bottom section {
   }
 }
 @media (min-width: 1600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003412}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003442}}
   footer #bottom section {
     padding: 5px;
     display: inline;
@@ -2238,7 +2279,7 @@ footer #bottom section {
 	@include reset-float();
 }
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003427}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003457}}
 .clean-link {
   text-decoration: none !important;
   background: none !important;
@@ -2250,14 +2291,14 @@ footer #bottom section {
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003432}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003462}}
 #bottom {
   float: none;
   display: block;
 }
 
 /* rotate fontawesome icons right */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003437}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nw\/dev\/prototyp-sub-website-mobile\/_css\/styles\.scss}line{font-family:\00003467}}
 .icon-rotate-right {
   display: inline-block;
   -webkit-transform: rotate(270deg);
