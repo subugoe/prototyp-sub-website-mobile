@@ -168,6 +168,9 @@ abbr {
 				text-decoration: none;
 				color: $link-color;
 			}
+			li:before {
+				@include caret(0 5px 0 -10px, $link-color);
+			}
 		}
 	}
 	input[type=text] { /* search field/box */
@@ -188,19 +191,21 @@ abbr {
 	.search-nav-discipline {
 		> ul {
 			font-size: 90%;
-			margin: 0 0 10px 0;
+			margin: 0 0 10px 15px;
 			ul {
-				margin: 0 0 0 30px;
-				li:before {
-					font-family: FontAwesome;
-					content: "\f0da";
-					margin: 0 5px 0 -10px;
-					color: $link-color;
-				}
+				margin: 0 0 0 10px;
 				li {
-					padding: 5px 0;
-					/* background-color: lightgrey; */
+					margin: 5px 0;
 				}
+			}
+		}
+	}
+	.search-nav-website {
+		ul {
+			font-size: 90%;
+			margin: 0 0 10px 15px;
+			li {
+				margin: 5px 0;
 			}
 		}
 	}
