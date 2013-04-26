@@ -146,6 +146,31 @@ abbr {
 	@include breakpoint(desktop) { width: $desktop-width; }
 }
 
+.menu {
+	background-color: #93a8cf;
+	display: inline-block;
+	width: 100%;
+	padding: 5px 10px;
+	a {
+		color: white;
+		text-decoration: none;
+	}
+	ul {
+		margin: 0;
+		li {
+			list-style-type: none;
+			display: inline-block;
+			@include float-right();
+		}
+		li:first-child {
+			@include float-left();
+		}
+		li:nth-child(2) {
+			margin: 0 10px;
+		}
+	}
+}
+
 #content {
 	p {
 		padding: 0 5px;
