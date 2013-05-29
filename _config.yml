@@ -1,14 +1,14 @@
-auto: true
+auto: false
 safe: false
-server: true
-exclude: procfile.dev, config.rb
+server: false
+exclude: procfile, config.rb
 markdown: rdiscount
 permalink: pretty
 sitename: Prototyp SUB-Website mobil
 siteauthor: Various
 sitedescription: Prototyp SUB-Website mobil
-jekyll-press:
-  exclude: '.htaccess' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns eg 'atom.xml'
-  js_options: {}      # js minifier options
-  css_options: {}     # css minifier options
-  html_options: {}    # html minifier options
+# jekyll-press:
+#  exclude: '.htaccess' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns eg 'atom.xml'
+#  js_options: {}      # js minifier options
+#  css_options: {}     # css minifier options
+#  html_options: {}    # html minifier options
