@@ -26,12 +26,20 @@ $transition-time-delay: '0s';
 $round-corner: 4px;
 $link-color: #1a3771;
 
+/*
 $phone-tall-width: 320px;
 $phone-wide-width: 480px;
 $tablet-tall-width: 768px;
 $tablet-wide-width: 1024px;
 $notebook-width: 1200px;
 $desktop-width: 1200px;
+*/
+$phone-tall-width: 100%;
+$phone-wide-width: 100%;
+$tablet-tall-width: 100%;
+$tablet-wide-width: 100%;
+$notebook-width: 100%;
+$desktop-width: 100%;
 
 /*
  * BASIC
@@ -133,13 +141,17 @@ abbr {
 
 #wrap {
 	width: $phone-tall-width;
+	min-width: 320px;
 	margin: 0 auto;
 /*
 	@include transition-property(width);
 	@include transition-duration($transition-time-duration);
 	@include transition-delay($transition-time-delay);
 */
-	@include breakpoint(phone-wide) { width: $phone-wide-width; }
+	@include breakpoint(phone-wide) {
+		width: $phone-wide-width;
+		//max-width: 420px;
+	}
 	@include breakpoint(tablet-tall) { width: $tablet-tall-width; }
 	@include breakpoint(tablet-wide) { width: $tablet-wide-width; }
 	@include breakpoint(notebook) { width: $notebook-width; }
@@ -247,9 +259,9 @@ abbr {
 			}
 			> a:first-child {
 				color: white;
-				width: $phone-tall-width - 48px;
+				/* width: $phone-tall-width - 48px; */
 				@include breakpoint(phone-wide) {
-					width: $phone-wide-width - 48px;
+					/* width: $phone-wide-width - 48px; */
 				}
 			}
 			> a:nth-child(2) {
@@ -306,9 +318,9 @@ abbr {
 				display: inline-block;
 			}
 			> a:first-child { /* the text link */
-				width: $phone-tall-width - 48px;
+				/* width: $phone-tall-width - 48px; */
 				@include breakpoint(phone-wide) {
-					width: $phone-wide-width - 48px;
+					/* width: $phone-wide-width - 48px; */
 				}
 			}
 			> a:nth-child(2) { /* the icon to open/close the menu item */
@@ -320,9 +332,9 @@ abbr {
 		}
 		> li.without-subitem { /* menu items without children like "SUB aktuell" and "SUB A-Z" */
 			> a {
-				width: $phone-tall-width - 20px;
+				/* width: $phone-tall-width - 20px; */
 				@include breakpoint(phone-wide) {
-					width: $phone-wide-width - 20px;
+					/* width: $phone-wide-width - 20px; */
 				}
 			}
 		}
