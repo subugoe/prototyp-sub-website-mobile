@@ -56,13 +56,13 @@
 						}
 						done = true;
 					}
-					$( 'body').addClass( 'breakpoint-' + options.breakpoints[bp] );
+					$( 'body').addClass( 'breakpoint-' + options.bp_names[bp] );
 					$( window ).trigger( 'enterBreakpoint' + options.breakpoints[bp] );
 				}
 
 				// fire onExit when browser contracts out of a larger breakpoint
 				if ( w < options.breakpoints[bp] && lastSize >= options.breakpoints[bp] ) {
-					$( 'body' ).removeClass( 'breakpoint-' + options.breakpoints[bp] );
+					$( 'body' ).removeClass( 'breakpoint-' + options.bp_names[bp] );
 					$( window ).trigger( 'exitBreakpoint' + options.breakpoints[bp] );
 				}
 
@@ -73,9 +73,9 @@
 					w < options.breakpoints[bp-1] && // and smaller than the bigger one
 					lastSize > w && // and we contracted
 					lastSize >0 &&  // and this is not the first time
-					!$( 'body' ).hasClass( 'breakpoint-' + options.breakpoints[bp] ) // and we aren't already in this breakpoint
+					!$( 'body' ).hasClass( 'breakpoint-' + options.bp_names[bp] ) // and we aren't already in this breakpoint
 					) {
-					$( 'body' ).addClass( 'breakpoint-' + options.breakpoints[bp] );
+					$( 'body' ).addClass( 'breakpoint-' + options.bp_names[bp] );
 					$( window ).trigger( 'enterBreakpoint' + options.breakpoints[bp] );
 				}
 
