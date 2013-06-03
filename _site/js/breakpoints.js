@@ -1,15 +1,15 @@
 /*
 	Breakpoints.js
 	version 1.0
-	
+
 	Creates handy events for your responsive design breakpoints
-	
+
 	Copyright 2011 XOXCO, Inc
 	http://xoxco.com/
 
 	Documentation for this plugin lives here:
 	http://xoxco.com/projects/code/breakpoints
-	
+
 	Licensed under the MIT license:
 	http://www.opensource.org/licenses/mit-license.php
 
@@ -20,51 +20,52 @@
 	var interval = null;
 
 	$.fn.resetBreakpoints = function() {
-		$(window).unbind('resize');
-		if (interval) {
-			clearInterval(interval);
+		$( window ).unbind( 'resize' );
+		if ( interval )  {
+			clearInterval(interval );
 		}
 		lastSize = 0;
 	};
-	
-	$.fn.setBreakpoints = function(settings) {
-		var options = jQuery.extend({
+
+	$.fn.setBreakpoints = function( settings ) {
+
+		var options = jQuery.extend( {
 							distinct: true,
-							breakpoints: new Array(320,480,768,1024)
-				    	},settings);
+							breakpoints: new Array( 320, 480, 768, 1024 ),
+							bp_names: new Array ( 's', 'm', 'l', 'xl' ),
+							}, settings );
 
+		interval = setInterval( function() {
 
-		interval = setInterval(function() {
-	
-			var w = $(window).width();
+			var w = $( window ).width();
 			var done = false;
-			
-			for (var bp in options.breakpoints.sort(function(a,b) { return (b-a) })) {
-			
+
+			for ( var bp in options.breakpoints.sort( function( a, b ) { return ( b-a ) } ) ) {
+
 				// fire onEnter when a browser expands into a new breakpoint
 				// if in distinct mode, remove all other breakpoints first.
-				if (!done && w >= options.breakpoints[bp] && lastSize < options.breakpoints[bp]) {
-					if (options.distinct) {
-						for (var x in options.breakpoints.sort(function(a,b) { return (b-a) })) {
-							if ($('body').hasClass('breakpoint-' + options.breakpoints[x])) {
-								$('body').removeClass('breakpoint-' + options.breakpoints[x]);
-								$(window).trigger('exitBreakpoint' + options.breakpoints[x]);
+				if ( !done && w >= options.breakpoints[bp] && lastSize < options.breakpoints[bp] ) {
+					if ( options.distinct ) {
+						for ( var x in options.breakpoints.sort( function( a, b ) { return ( b-a ) } ) ) {
+							//if ( $('body' ).hasClass( 'breakpoint-' + options.breakpoints[x] ) ) {
+							if ( $('body' ).hasClass( 'breakpoint-' + options.bp_names[x] ) ) {
+								//$( 'body' ).removeClass( 'breakpoint-' + options.breakpoints[x] );
+								$( 'body' ).removeClass( 'breakpoint-' + options.bp_names[x] );
+								$( window ).trigger( 'exitBreakpoint' + options.breakpoints[x] );
 							}
 						}
 						done = true;
 					}
-					$('body').addClass('breakpoint-' + options.breakpoints[bp]);
-					$(window).trigger('enterBreakpoint' + options.breakpoints[bp]);
-
-				}				
+					$( 'body').addClass( 'breakpoint-' + options.bp_names[bp] );
+					$( window ).trigger( 'enterBreakpoint' + options.breakpoints[bp] );
+				}
 
 				// fire onExit when browser contracts out of a larger breakpoint
-				if (w < options.breakpoints[bp] && lastSize >= options.breakpoints[bp]) {
-					$('body').removeClass('breakpoint-' + options.breakpoints[bp]);
-					$(window).trigger('exitBreakpoint' + options.breakpoints[bp]);
-
+				if ( w < options.breakpoints[bp] && lastSize >= options.breakpoints[bp] ) {
+					$( 'body' ).removeClass( 'breakpoint-' + options.bp_names[bp] );
+					$( window ).trigger( 'exitBreakpoint' + options.breakpoints[bp] );
 				}
-				
+
 				// if in distinct mode, fire onEnter when browser contracts into a smaller breakpoint
 				if (
 					options.distinct && // only one breakpoint at a time
@@ -72,19 +73,21 @@
 					w < options.breakpoints[bp-1] && // and smaller than the bigger one
 					lastSize > w && // and we contracted
 					lastSize >0 &&  // and this is not the first time
-					!$('body').hasClass('breakpoint-' + options.breakpoints[bp]) // and we aren't already in this breakpoint
-					) {					
-					$('body').addClass('breakpoint-' + options.breakpoints[bp]);
-					$(window).trigger('enterBreakpoint' + options.breakpoints[bp]);
+					!$( 'body' ).hasClass( 'breakpoint-' + options.bp_names[bp] ) // and we aren't already in this breakpoint
+					) {
+					$( 'body' ).addClass( 'breakpoint-' + options.bp_names[bp] );
+					$( window ).trigger( 'enterBreakpoint' + options.breakpoints[bp] );
+				}
 
-				}						
 			}
-			
+
 			// set up for next call
-			if (lastSize != w) {
+			if ( lastSize != w ) {
 				lastSize = w;
 			}
-		},250);
+
+		}, 250 );
+
 	};
-	
-})(jQuery);
+
+} )( jQuery );
